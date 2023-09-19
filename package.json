@@ -13,8 +13,12 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@iconify/react": "^4.1.1",
     "@lottiefiles/lottie-player": "^2.0.2",
+    "@mui/icons-material": "^5.14.9",
+    "@mui/material": "^5.14.10",
     "@vitejs/plugin-react": "^4.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

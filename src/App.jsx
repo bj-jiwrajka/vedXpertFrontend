@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./Pages";
 import { Navbar, Footer } from "./Components";
+
 function App() {
   return (
     <>
