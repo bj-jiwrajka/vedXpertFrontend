@@ -5,3 +5,13 @@
   left: 70%;
   top: 20%;
 }
+
+@media screen and (max-width: 800px) {
+  #headLottie {
+    position: relative;
+    width: 70%;
+    left: 0;
+    margin: auto;
+    top: 0;
+  }
+}
