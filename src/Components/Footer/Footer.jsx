@@ -1,10 +1,10 @@
-import "./Footer.module.scss";
-const Navbar = () => {
+import style from "./Footer.module.scss";
+const Footer = () => {
   return (
-    <div>
-      <h4>Footer</h4>
+    <div className={style.footer}>
+      <h2>Footer</h2>
     </div>
   );
 };
 
-export default Navbar;
+export default Footer;
