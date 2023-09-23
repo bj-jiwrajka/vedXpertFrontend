@@ -1,4 +1,4 @@
-import { Landing, Explore } from "../../Components";
+import { Landing, Explore, Register } from "../../Components";
 import style from "./Home.module.scss";
 
 const Home = () => {
@@ -6,6 +6,7 @@ const Home = () => {
     <main className={style.home}>
       <Landing />
       <Explore />
+      <Register />
     </main>
   );
 };
