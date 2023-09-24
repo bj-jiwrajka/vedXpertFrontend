@@ -36,7 +36,10 @@
 
 .footer-social-icons > li > a {
   font-size: 2rem;
-  color: white;
+  color: rgb(225, 225, 225);
+  :hover {
+    color: #fff;
+  }
 }
 
 .footer-social-icons {
