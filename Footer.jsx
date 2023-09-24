@@ -1,5 +1,5 @@
 import { SassColor } from "sass";
-import  "./Footer.module.scss";
+import  "./Footer.scss";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
