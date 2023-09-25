@@ -7,10 +7,9 @@ const Landing = () => {
         <div className={style.leftlanding}>
           <h1>Welcome to VedXpert</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-            nemo sunt cum, voluptates facere aliquam sed illum! Pariatur
-            repellendus necessitatibus ipsa in fugiat beatae fugit corrupti!
-            Laborum suscipit incidunt odit?
+            Your Ayurvedic Health Partner. Explore ailments, symptoms, and
+            remedies. Embrace Ayurveda for a healthier you. Join our community
+            of well-being seekers today!
           </p>
           <div className={style.landingbuttons}>
             <button>Explore Now</button>
