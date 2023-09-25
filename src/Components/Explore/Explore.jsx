@@ -31,13 +31,16 @@ export default function SearchBar() {
 
   return (
     <div className="explore">
+      <div className="upperhalf">
+        <span className="exploretext">Search Your</span>
+        <span className="collegetext">
+          &nbsp;<span>Sympt</span>
+        </span>
+      </div>
       <Box
-        pt={4}
         sx={{
-          maxWidth: 400,
+          maxWidth: [300, 800],
           margin: "0 auto",
-          paddingTop: "100px",
-          paddingBottom: "100px",
         }}
       >
         <Box sx={{ maxWidth: 200, margin: "0 auto" }}>
@@ -74,7 +77,7 @@ export default function SearchBar() {
           >
             <InputBase
               sx={{ flex: 1, fontSize: "1rem" }}
-              placeholder="Search "
+              placeholder="Enter your disease/medicine"
               inputProps={{ "aria-label": "search user" }}
               value={inputValue}
               onChange={handleInputChange}

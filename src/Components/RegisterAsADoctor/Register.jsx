@@ -90,6 +90,9 @@ export default function Register() {
                   mb: 2,
                   backgroundColor: "#1A5276",
                   color: "#FFFFFF",
+                  "&:hover": {
+                    backgroundColor: "#053d5a",
+                  },
                 }}
                 onClick={handleClickOpen}
               >

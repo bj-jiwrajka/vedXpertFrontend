@@ -13,9 +13,7 @@ const Footer = () => {
           <p>
             VedXpert, your trusted online companion for Ayurvedic solutions.
             Explore a vast database of diseases, symptoms, and time-tested
-            remedies, all in one user-friendly web app. Empower yourself with
-            holistic health knowledge and embrace the wisdom of Ayurveda for a
-            healthier life.
+            remedies, all in one user-friendly web app.
           </p>
         </div>
 
