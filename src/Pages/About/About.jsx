@@ -3,11 +3,14 @@ import "./About.scss";
 const About = () => {
   return (
     <div className="about-container">
-      <h1 className="about-heading">About Us</h1>
+      <h1 className="about-heading">
+        <span className="about-a">A</span>
+        bout Us
+      </h1>
 
       <div className="about-bottom">
         <div className="about-image">
-          <img src="src/assets/images/about-us-2.jpg" />
+          <img src="https://res.cloudinary.com/dnitrnzho/image/upload/v1695724324/about-us-2_dpiptx.jpg" />
         </div>
         <div className="about-content">
           <p className="about-text">
