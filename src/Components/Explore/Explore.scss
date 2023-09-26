@@ -1,0 +1,66 @@
+.explore {
+  margin-bottom: 3rem;
+
+  .upperhalf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+
+    .exploretext {
+      font-size: 4em;
+      font-weight: 400;
+      color: var(--gdsc-content-1-100);
+      line-height: 4em;
+    }
+
+    .collegetext {
+      font-size: 4em;
+      font-weight: 400;
+      line-height: 2rem;
+      position: relative;
+      visibility: hidden;
+    }
+
+    .collegetext::before {
+      content: "";
+      animation-name: animate;
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+      animation-direction: linear;
+      animation-timing-function: ease;
+      position: absolute;
+      left: 0.3em;
+      visibility: visible;
+      color: var(--dark-blue-color);
+    }
+
+    @keyframes animate {
+      0% {
+        content: "Medicines";
+      }
+
+      50% {
+        content: "Drugs";
+      }
+
+      100% {
+        content: "Symptoms";
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .explore {
+    .upperhalf {
+      .exploretext {
+        font-size: 1.2em;
+      }
+
+      .collegetext {
+        font-size: 1.2em;
+      }
+    }
+  }
+}

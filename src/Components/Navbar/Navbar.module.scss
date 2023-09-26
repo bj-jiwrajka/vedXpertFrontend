@@ -1,84 +1,108 @@
-.active {
-  background-color: #1d4ed8;
-}
 nav {
-  height: 4rem;
+  height: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0f172a;
+  background-color: var(--dark-blue-color);
   position: sticky;
   top: 0;
+  z-index: 300;
 }
+
 nav .title {
   margin-left: 4rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 200;
   margin: 1rem;
   text-decoration: none;
   color: white;
   font-family: var(--vedxpert-font);
 }
+
 nav ul {
   display: flex;
 }
+
 nav ul li {
   list-style: none;
 }
+
 nav ul li a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: rgb(225, 225, 225);
   padding: 0.5rem;
   margin: 0 0.5rem;
   border-radius: 0.5rem;
+  &:hover {
+    color: #fff;
+  }
 }
-nav ul li a:not(.active):hover {
-  background-color: #172554;
-}
+
 nav .menu {
   display: none;
   position: absolute;
   top: 0.75rem;
   right: 0.5rem;
   flex-direction: column;
-  justify-content: space-between;
   width: 2.25rem;
   height: 2rem;
+  gap: 0.2rem;
+  cursor: pointer;
+  z-index: 100;
 }
+
 nav .menu span {
-  height: 0.5rem;
-  width: 100%;
+  height: 0.35rem;
   background-color: #ffff;
-  // color: #1d4ed8;
   border-radius: 0.2rem;
+  cursor: pointer;
 }
+
 @media screen and (max-width: 480px) {
   nav .menu {
     display: flex;
   }
+
   nav {
     flex-direction: column;
     align-items: start;
+    background: linear-gradient(to left, #a8e0f7, #ffffff);
+    position: relative;
   }
+
   nav ul {
     display: none;
     flex-direction: column;
     width: 100%;
     margin-bottom: 0.25rem;
+    transition: transform 0.5s ease-in;
+    transform: translateY(-100%);
   }
+
   nav ul.open {
     display: flex;
-    background-color: #0f172a;
-    // transition: all 5s ease-in;
+    background-color: #1a5276;
+    transition: all 5s ease-in;
+    animation: slideDown 0.3s ease-in-out forwards;
+  }
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
   }
   nav ul li {
     width: 100%;
     text-align: center;
   }
+
   nav ul li a {
     margin: 0.2rem 0.5rem;
   }
+
   nav .title {
     display: none;
   }

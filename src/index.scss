@@ -7,6 +7,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   --vedxpert-font: "Poppins", sans-serif;
+  --dark-blue-color: #1a5276;
 }
 
 * {
@@ -21,11 +22,6 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
-
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
 }
@@ -50,7 +46,8 @@ button {
 
 button:hover {
   border-color: #040630;
-  background-color: #213547;
+  background-color: rgb(29, 58, 83);
+  transition: all 0.2s;
 }
 
 button:focus,
