@@ -155,7 +155,12 @@ export default function Register() {
                 type="submit"
                 fullWidth
                 variant="contained"
-                sx={{ backgroundColor: "#1A5276" }}
+                sx={{
+                  backgroundColor: "#1A5276",
+                  "&:hover": {
+                    backgroundColor: "#053d5a",
+                  },
+                }}
               >
                 Sign Up
               </Button>
